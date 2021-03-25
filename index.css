@@ -18,9 +18,12 @@ h1,
 ul,
 li {
     margin: 0;
-    position: relative;
+    padding: 0;
 }
 
+li {
+    list-style: none;
+}
 
 
 .page {
@@ -57,7 +60,7 @@ li {
     border-radius: 30px;
 }
 
-
+/* ===========header========== */
 
 .header {
     display: flex;
@@ -103,6 +106,10 @@ li {
     background-color: #e10101;
 }
 
+.header__btn:hover {
+    box-shadow: inset 0 0 8.10px 0.2px #910202;
+}
+
 .header__btn::before {
     content: "";
     width: 2px;
@@ -139,24 +146,22 @@ li {
     padding: 0;
 }
 
-/* .header__item {
-    list-style: none;
-} */
-
 .header__item:not(:last-of-type) {
     margin-right: 25px;
 }
 
 .header__link {
     color: #b8b9b9;
-
-    /* text-decoration: none; */
 }
 
-.header__link--dark {
+.header__link:hover {
+    color: #16ba98;
+}
+
+
+.active {
     color: #767777;
 }
-
 
 .header__title {
     margin: 0 0 70px;
@@ -168,12 +173,13 @@ li {
     letter-spacing: -0.7px;
 }
 
+/* ===========main========== */
 
 .main {
     display: flex;
     justify-content: center;
 
-    background-color: #f8f8f8;   
+    background-color: #f8f8f8;
     box-shadow: inset 0 0 8.8px 0.2px rgba(1, 1, 1, 0.17);
 }
 
@@ -191,15 +197,21 @@ li {
 
     font-family: inherit;
     font-size: 16px;
-    color: #b8b9b9;
+    line-height: 1.25;
+
+    color: #bdbdbd;
+
+    border: solid 2px #ebebeb;       
 }
 
-.main__input--name {
+.focused {
     background-color: #d3e6f4;
-    color: #767777;
+    border: solid 2px #b3cbda; 
+    color: #5a5b5b;
     font-size: 16px;
     line-height: 20px;
 }
+
 
 .main__input--textarea {
     height: 145px;
@@ -207,6 +219,8 @@ li {
 
     resize: none;
 }
+
+/* ===========footer========== */
 
 .footer {
     display: flex;
@@ -225,6 +239,8 @@ li {
     padding: 10px 15px;
 
     width: 320px;
+
+    border: solid 2px #ebebeb;
 }
 
 .footer__text {
@@ -245,5 +261,13 @@ li {
 
     background-color: #16ba98;
     font-size: 24px;
-    color: #fff;    
+    color: #fff;
+}
+
+.footer__btn:hover {
+    box-shadow: inset 0 0 8.10px 0.2px #095c4b;
+}
+
+.footer__btn:active {
+    box-shadow: inset 0 0 8.10px 0.2px #05241d;
 }
