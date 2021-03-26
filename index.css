@@ -150,22 +150,15 @@ li {
     color: #b8b9b9;
 }
 
-.header__link:hover {
+.header__link:not(.active):hover {
     color: #16ba98;
 }
+
 
 .active {
     color: #767777;
+    pointer-events: none;
 }
-
-.active:hover {
-    color: #767777;
-}
-
-/* .header__link:not(:last-of-type):hover {
-    color: #16ba98;
-} */
-
 
 .header__title {
     margin: 0 0 70px;
