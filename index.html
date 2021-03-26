@@ -13,81 +13,80 @@
 </head>
 
 <body>
-    <div class="page">
-        <div class="wrap-bg"> </div> <!-- ./wrap -->
+    <div class="modal">
+        <div class="opacity-bg">             
+        </div> 
 
-            <section class="form">
-                <button class="header__btn btn"></button>
+        <section class="form">
+            <button class="btn--upper btn"></button>
 
-                <!-- header -->
+            <!-- header -->
 
-                <header class="header">
+            <header class="header">
 
-                    <nav class="header__nav">
-                        <ul class="header__list">
-                            <li class="header__item">
-                                <a class="header__link" href="#">Главная</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="#">Контакты</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link active" href="#">
-                                    Форма обратной связи
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="#">Главная</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link active" href="#">
+                                Форма обратной связи
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-                    <h1 class="header__title">Форма обратной связи</h1>
+                <h1 class="header__title">Форма обратной связи</h1>
 
-                </header> <!-- ./header -->
-
-
-                <!-- main -->
-
-                <div class="main">
-
-                    <form class="main__form" action="/" method="post">
-
-                        <input class="main__input main__input--name focused" type="text" name="name"
-                            value="Иванов Иван Иванович" placeholder="Введите Ваше имя">
-
-                        <input class="main__input main__input--email" type="email" name="email"
-                            placeholder="Введите Ваш e-mail">
-
-                        <input class="main__input main__input--tel" type="tel" name="tel"
-                            placeholder="Введите Ваш телефон">
-
-                        <textarea class="main__input main__input--textarea" name="text"
-                            placeholder="Введите текст"></textarea>
-
-                    </form> <!-- ./main__form -->
-
-                </div> <!-- ./main -->
+            </header> <!-- ./header -->
 
 
-                <!-- footer -->
+            <!-- main -->
 
-                <footer class="footer">
+            <div class="main">
 
-                    <div class="footer__box">
-                        <input class="footer__input" type="text">
-                        <span class="footer__text">Введите код на картинке справа</span>
-                    </div>
+                <form class="main__form" action="/" method="post">
 
-                    <img class="captcha" src="./img/capcha.jpg" alt="captcha">
+                    <input class="main__input main__input--name focused" type="text" name="name"
+                        value="иванов иван иванович" placeholder="Введите Ваше имя">
 
-                </footer> <!-- ./footer -->
+                    <input class="main__input main__input--email" type="email" name="email"
+                        placeholder="Введите Ваш e-mail">
+
+                    <input class="main__input main__input--tel" type="tel" name="tel" placeholder="Введите Ваш телефон">
+
+                    <textarea class="main__input main__input--textarea" name="text"
+                        placeholder="Введите текст"></textarea>
+
+                </form> <!-- ./main__form -->
+
+            </div> <!-- ./main -->
 
 
-                <button class="footer__btn btn">Отправить</button>
+            <!-- footer -->
 
-            </section> <!-- ./form -->
+            <footer class="footer">
 
-        
+                <div class="footer__box">
+                    <input class="footer__input" type="text">
+                    <span class="footer__text">Введите код на картинке справа</span>
+                </div>
 
-    </div> <!-- ./page -->
+                <img class="captcha" src="./img/capcha.jpg" alt="captcha">
+
+            </footer> <!-- ./footer -->
+
+
+            <button class="btn--under btn">Отправить</button>
+
+        </section> <!-- ./form -->
+
+
+    </div> <!-- ./modal -->
 
 </body>
 
