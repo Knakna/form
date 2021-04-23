@@ -14,11 +14,11 @@
 
 <body>
     <div class="modal">
-        
-        <!-- <div class="opacity-bg">             
+
+        <!-- <div class="opacity-bg">
         </div>  -->
 
-        <section class="form">
+        <main class="form">
             <button class="btn--upper btn"></button>
 
             <!-- header -->
@@ -50,18 +50,20 @@
 
             <div class="main">
 
-                <form class="main__form" action="/" method="post">
+                <form class="main__form" id="form" action="/" method="post">
+                    <fieldset class="main__info">
+                        <input class="main__input main__input--name focused" type="text" name="name"
+                            value="иванов иван иванович" placeholder="Введите Ваше имя">
 
-                    <input class="main__input main__input--name focused" type="text" name="name"
-                        value="иванов иван иванович" placeholder="Введите Ваше имя">
+                        <input class="main__input main__input--email" type="email" name="email"
+                            placeholder="Введите Ваш e-mail">
 
-                    <input class="main__input main__input--email" type="email" name="email"
-                        placeholder="Введите Ваш e-mail">
+                        <input class="main__input main__input--tel" type="tel" name="tel"
+                            placeholder="Введите Ваш телефон">
 
-                    <input class="main__input main__input--tel" type="tel" name="tel" placeholder="Введите Ваш телефон">
-
-                    <textarea class="main__input main__input--textarea" name="text"
-                        placeholder="Введите текст"></textarea>
+                        <textarea class="main__input main__input--textarea" name="text"
+                            placeholder="Введите текст"></textarea>
+                    </fieldset>
 
                 </form> <!-- ./main__form -->
 
@@ -72,19 +74,19 @@
 
             <footer class="footer">
 
-                <div class="footer__box">
+                <fieldset class="footer__box" form="form">
                     <input class="footer__input" type="text">
                     <span class="footer__text">Введите код на картинке справа</span>
-                </div>
+                </fieldset>
 
                 <img class="captcha" src="./img/capcha.jpg" alt="captcha">
 
             </footer> <!-- ./footer -->
 
 
-            <button class="btn--under btn">Отправить</button>
+            <button class="btn--under btn" form="form">Отправить</button>
 
-        </section> <!-- ./form -->
+        </main> <!-- ./form -->
 
 
     </div> <!-- ./modal -->
